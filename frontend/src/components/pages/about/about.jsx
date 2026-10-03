@@ -9,7 +9,6 @@ function About() {
   const [profile, setProfile] = useState(null);
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
-
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -93,18 +92,12 @@ function About() {
       <Navbar />
 
       <main className="about">
-
         <div className="about__glow"></div>
 
         <div className="container about__container">
-
           <section className="about__hero">
-
             <div className="about__hero-content">
-
-              <p className="about__eyebrow">
-                ABOUT ME
-              </p>
+              <p className="about__eyebrow">ABOUT ME</p>
 
               <h1>
                 Developer.
@@ -112,12 +105,9 @@ function About() {
                 <span>Builder.</span>
               </h1>
 
-              <p className="about__lead">
-                {profile.description}
-              </p>
+              <p className="about__lead">{profile.description}</p>
 
               <div className="about__links">
-
                 {profile.github && (
                   <a
                     href={profile.github}
@@ -153,13 +143,10 @@ function About() {
                     Email
                   </a>
                 )}
-
               </div>
-
             </div>
 
             <div className="about__profile">
-
               {profile.profile_image ? (
                 <img
                   src={profile.profile_image}
@@ -168,23 +155,14 @@ function About() {
               ) : (
                 <div className="about__profile-placeholder">
                   <span>ALPHA</span>
-
-                  <strong>
-                    {profile.name}
-                  </strong>
-
-                  <small>
-                    {profile.role}
-                  </small>
+                  <strong>{profile.name}</strong>
+                  <small>{profile.role}</small>
                 </div>
               )}
-
             </div>
-
           </section>
 
           <section className="about__stats">
-
             <div>
               <strong>{profile.learning_duration || "2.5+"}</strong>
               <span>YEARS LEARNING</span>
@@ -204,95 +182,61 @@ function About() {
               <strong>{learningSkills.length}</strong>
               <span>CURRENTLY LEARNING</span>
             </div>
-
           </section>
 
           <section className="about__section">
-
             <div className="about__section-label">
               <span>01</span>
               EDUCATION
             </div>
 
             <div className="about__section-content">
-
               <h2>
                 Studying security.
                 <span> Building software.</span>
               </h2>
 
               <div className="about__education-grid">
-
                 <article>
                   <span>UNIVERSITY</span>
-
-                  <h3>
-                    {profile.university || "Dongshin University"}
-                  </h3>
-
-                  <p>
-                    {profile.major || "Cyber Security"}
-                  </p>
+                  <h3>{profile.university || "Dongshin University"}</h3>
+                  <p>{profile.major || "Cyber Security"}</p>
                 </article>
 
                 <article>
                   <span>CURRENT STUDY</span>
-
-                  <h3>
-                    {profile.study_year || "4th Year"}
-                  </h3>
-
-                  <p>
-                    {profile.semester || "7th Semester"}
-                  </p>
+                  <h3>{profile.study_year || "4th Year"}</h3>
+                  <p>{profile.semester || "7th Semester"}</p>
                 </article>
 
                 <article>
                   <span>IELTS</span>
-
-                  <h3>
-                    {profile.ielts || "7.0"}
-                  </h3>
-
-                  <p>
-                    English proficiency
-                  </p>
+                  <h3>{profile.ielts || "7.0"}</h3>
+                  <p>English proficiency</p>
                 </article>
 
                 <article>
                   <span>TOPIK</span>
-
-                  <h3>
-                    Level {profile.topik || "4"}
-                  </h3>
-
-                  <p>
-                    Korean proficiency
-                  </p>
+                  <h3>Level {profile.topik || "4"}</h3>
+                  <p>Korean proficiency</p>
                 </article>
-
               </div>
-
             </div>
-
           </section>
 
           <section className="about__section">
-
             <div className="about__section-label">
               <span>02</span>
               TRAINING
             </div>
 
             <div className="about__section-content">
-
               <h2>
                 Learning across
                 <span> multiple disciplines.</span>
               </h2>
 
               <div className="about__training">
-
                 <article>
                   <span>01</span>
                   <h3>Python</h3>
@@ -337,61 +281,43 @@ function About() {
                     design principles.
                   </p>
                 </article>
-
               </div>
-
             </div>
-
           </section>
 
           <section className="about__section">
-
             <div className="about__section-label">
               <span>03</span>
               MY JOURNEY
             </div>
 
             <div className="about__section-content">
-
               <h2>
                 Learning through
                 <span> building.</span>
               </h2>
 
               <div className="about__timeline">
-
                 {experiences.map((experience) => (
                   <article
                     className="about__timeline-item"
                     key={experience.id}
                   >
-
                     <div className="about__timeline-year">
-
                       <strong>
                         {experience.started_at?.slice(0, 4)}
                       </strong>
 
-                      {experience.current && (
-                        <span>NOW</span>
-                      )}
-
+                      {experience.current && <span>NOW</span>}
                     </div>
 
                     <div className="about__timeline-info">
+                      <p>{experience.category}</p>
 
-                      <p>
-                        {experience.category}
-                      </p>
-
-                      <h3>
-                        {experience.title}
-                      </h3>
+                      <h3>{experience.title}</h3>
 
                       {experience.organization && (
-                        <h4>
-                          {experience.organization}
-                        </h4>
+                        <h4>{experience.organization}</h4>
                       )}
 
                       {experience.description && (
@@ -399,58 +325,36 @@ function About() {
                           {experience.description}
                         </p>
                       )}
-
                     </div>
-
                   </article>
                 ))}
-
               </div>
-
             </div>
-
           </section>
 
           <section className="about__skills">
-
             <div>
-
-              <p>
-                TECH STACK
-              </p>
+              <p>TECH STACK</p>
 
               <h2>
                 Technologies I
                 <span> work with.</span>
               </h2>
-
             </div>
 
             <div className="about__skill-grid">
-
               {skills.map((skill) => (
                 <div
                   className="about__skill"
                   key={skill.id}
                 >
-
-                  <span>
-                    {skill.name}
-                  </span>
-
-                  <small>
-                    {skill.category}
-                  </small>
-
+                  <span>{skill.name}</span>
+                  <small>{skill.category}</small>
                 </div>
               ))}
-
             </div>
-
           </section>
-
         </div>
-
       </main>
     </>
   );

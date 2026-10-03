@@ -1,36 +1,26 @@
 .contact {
   position: relative;
-
   min-height: 100vh;
-
   padding: 150px 0 110px;
-
   overflow: hidden;
-
   background: #020711;
-
   color: #f5f7fa;
 
   &__container {
     position: relative;
-
     z-index: 2;
   }
 
   &__glow {
     position: absolute;
-
     border-radius: 50%;
-
     pointer-events: none;
 
     &--one {
       width: 700px;
       height: 700px;
-
       top: -340px;
       right: -250px;
-
       background: radial-gradient(
         circle,
         rgba(22, 133, 255, 0.14),
@@ -41,10 +31,8 @@
     &--two {
       width: 500px;
       height: 500px;
-
       left: -300px;
       bottom: -240px;
-
       background: radial-gradient(
         circle,
         rgba(22, 133, 255, 0.07),
@@ -55,98 +43,72 @@
 
   &__hero {
     max-width: 920px;
-
     margin-bottom: 80px;
   }
 
   &__eyebrow {
     margin-bottom: 18px;
-
     color: #1685ff;
-
     font-size: 10px;
     font-weight: 700;
-
     letter-spacing: 5px;
   }
 
   h1 {
     max-width: 900px;
-
     font-size: clamp(58px, 7vw, 96px);
-
     line-height: 0.98;
-
     letter-spacing: -5px;
 
     span {
       display: block;
-
       color: #1685ff;
     }
   }
 
   &__intro {
     max-width: 650px;
-
     margin-top: 28px;
-
     color: #8191a4;
-
     font-size: 16px;
-
     line-height: 1.8;
   }
 
   &__content {
     display: grid;
-
-    grid-template-columns:
-      minmax(0, 1.45fr)
-      minmax(320px, 0.8fr);
-
+    grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.8fr);
     gap: 60px;
   }
 
   &__section-title {
     display: flex;
-
     align-items: flex-start;
-
     gap: 22px;
-
     margin-bottom: 30px;
 
     > span {
       color: #1685ff;
-
       font-size: 11px;
       font-weight: 800;
     }
 
     p {
       margin-bottom: 6px;
-
       color: #50647a;
-
       font-size: 8px;
       font-weight: 700;
-
       letter-spacing: 3px;
     }
 
     h2 {
       font-size: 30px;
-
       letter-spacing: -1px;
     }
   }
 
   &__cards {
     display: grid;
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     gap: 16px;
   }
 
@@ -156,19 +118,14 @@
 
   &__side {
     display: flex;
-
     flex-direction: column;
-
     gap: 18px;
   }
 
   &__availability {
     padding: 32px;
-
     border: 1px solid #163450;
-
     border-radius: 18px;
-
     background:
       radial-gradient(
         circle at top right,
@@ -179,61 +136,40 @@
 
     &-top {
       display: flex;
-
       align-items: center;
-
       gap: 9px;
-
       margin-bottom: 26px;
-
       color: #6f8399;
-
       font-size: 8px;
       font-weight: 700;
-
       letter-spacing: 2px;
     }
 
     h2 {
       font-size: 28px;
-
       line-height: 1.25;
-
       letter-spacing: -1px;
     }
 
     p {
       margin-top: 18px;
-
       color: #728397;
-
       font-size: 13px;
-
       line-height: 1.75;
     }
 
     a {
       width: fit-content;
-
       margin-top: 28px;
-
       display: inline-flex;
-
       align-items: center;
-
       gap: 8px;
-
       padding: 12px 18px;
-
       border-radius: 9px;
-
       background: #1685ff;
-
       color: white;
-
       font-size: 11px;
       font-weight: 700;
-
       transition: 0.25s ease;
 
       span {
@@ -242,9 +178,7 @@
 
       &:hover {
         transform: translateY(-2px);
-
-        box-shadow:
-          0 12px 35px rgba(22, 133, 255, 0.22);
+        box-shadow: 0 12px 35px rgba(22, 133, 255, 0.22);
 
         span {
           transform: translate(2px, -2px);
@@ -256,34 +190,23 @@
   &__dot {
     width: 7px;
     height: 7px;
-
     border-radius: 50%;
-
     background: #1685ff;
-
-    box-shadow:
-      0 0 12px rgba(22, 133, 255, 0.75);
+    box-shadow: 0 0 12px rgba(22, 133, 255, 0.75);
   }
 
   &__details {
     padding: 25px 28px;
-
     border: 1px solid #122b44;
-
     border-radius: 18px;
-
     background: #050d18;
 
     > div {
       display: flex;
-
       align-items: center;
       justify-content: space-between;
-
       gap: 20px;
-
       padding: 15px 0;
-
       border-bottom: 1px solid #102338;
 
       &:first-child {
@@ -292,24 +215,19 @@
 
       &:last-child {
         padding-bottom: 0;
-
         border-bottom: none;
       }
 
       span {
         color: #4d6075;
-
         font-size: 7px;
         font-weight: 700;
-
         letter-spacing: 2px;
       }
 
       strong {
         color: #b6c4d2;
-
         font-size: 11px;
-
         text-align: right;
       }
     }
@@ -318,23 +236,14 @@
 
 .contact-card {
   min-height: 205px;
-
   position: relative;
-
   display: flex;
-
   flex-direction: column;
-
   padding: 26px;
-
   border: 1px solid #122b44;
-
   border-radius: 16px;
-
   background: #050d18;
-
   color: #f5f7fa;
-
   transition:
     transform 0.3s ease,
     border-color 0.3s ease,
@@ -342,23 +251,18 @@
 
   &:hover {
     transform: translateY(-5px);
-
     border-color: rgba(22, 133, 255, 0.65);
-
     background: #07111e;
 
     > strong {
       color: #1685ff;
-
       transform: translate(2px, -2px);
     }
   }
 
   &__number {
     margin-bottom: 30px;
-
     color: #1685ff;
-
     font-size: 9px;
     font-weight: 800;
   }
@@ -366,44 +270,32 @@
   &__content {
     span {
       color: #52667c;
-
       font-size: 7px;
       font-weight: 700;
-
       letter-spacing: 2px;
     }
 
     h3 {
       margin-top: 8px;
-
       font-size: 17px;
-
       line-height: 1.35;
-
       word-break: break-word;
     }
 
     p {
       margin-top: 12px;
-
       color: #6e8094;
-
       font-size: 11px;
-
       line-height: 1.6;
     }
   }
 
   > strong {
     position: absolute;
-
     top: 24px;
     right: 24px;
-
     color: #4c6278;
-
     font-size: 16px;
-
     transition:
       color 0.25s ease,
       transform 0.25s ease;
@@ -433,7 +325,6 @@
     &__details {
       > div {
         align-items: flex-start;
-
         flex-direction: column;
 
         strong {

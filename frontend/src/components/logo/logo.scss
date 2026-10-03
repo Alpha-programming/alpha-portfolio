@@ -2,36 +2,28 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-
   color: #f5f7fa;
   text-decoration: none;
-
   transition: 0.3s ease;
 
   &__mark {
     width: 34px;
     height: 34px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: 1px solid #17446f;
     border-radius: 9px;
-
     background:
       linear-gradient(
         145deg,
         rgba(22, 133, 255, 0.16),
         rgba(3, 10, 20, 0.9)
       );
-
     color: #1685ff;
-
     font-size: 18px;
     font-weight: 900;
     line-height: 1;
-
     box-shadow:
       0 0 0 rgba(22, 133, 255, 0);
 
@@ -44,18 +36,14 @@
   &__text {
     font-size: 22px;
     font-weight: 800;
-
     letter-spacing: 3px;
-
     transition: color 0.3s ease;
   }
 
   &:hover {
     .logo__mark {
       transform: translateY(-2px);
-
       border-color: #1685ff;
-
       box-shadow:
         0 8px 25px rgba(22, 133, 255, 0.18);
     }
@@ -73,13 +61,11 @@
     &__mark {
       width: 30px;
       height: 30px;
-
       font-size: 16px;
     }
 
     &__text {
       font-size: 18px;
-
       letter-spacing: 2px;
     }
   }

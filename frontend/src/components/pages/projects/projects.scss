@@ -1,36 +1,26 @@
 .projects {
   position: relative;
-
   min-height: 100vh;
-
   padding: 145px 0 115px;
-
   overflow: hidden;
-
   background: #020711;
-
   color: #f5f7fa;
 
   &__container {
     position: relative;
-
     z-index: 2;
   }
 
   &__glow {
     position: absolute;
-
     border-radius: 50%;
-
     pointer-events: none;
 
     &--one {
       width: 760px;
       height: 760px;
-
       top: -380px;
       right: -300px;
-
       background: radial-gradient(
         circle,
         rgba(22, 133, 255, 0.13),
@@ -41,10 +31,8 @@
     &--two {
       width: 550px;
       height: 550px;
-
       left: -350px;
       bottom: -250px;
-
       background: radial-gradient(
         circle,
         rgba(22, 133, 255, 0.06),
@@ -55,88 +43,63 @@
 
   &__hero {
     position: relative;
-
     max-width: 950px;
-
     margin-bottom: 95px;
-
     padding-bottom: 70px;
-
     border-bottom: 1px solid #102338;
   }
 
   &__eyebrow {
     margin-bottom: 18px;
-
     color: #1685ff;
-
     font-size: 9px;
     font-weight: 700;
-
     letter-spacing: 5px;
   }
 
   h1 {
     max-width: 900px;
-
     font-size: clamp(62px, 8vw, 105px);
-
     line-height: 0.94;
-
     letter-spacing: -6px;
 
     span {
       display: block;
-
       color: #1685ff;
     }
   }
 
   &__intro {
     max-width: 680px;
-
     margin-top: 28px;
-
     color: #8191a4;
-
     font-size: 16px;
-
     line-height: 1.8;
   }
 
   &__stats {
     position: absolute;
-
     right: 0;
     bottom: 62px;
-
     display: flex;
-
     gap: 35px;
 
     > div {
       display: flex;
-
       flex-direction: column;
-
       align-items: flex-end;
 
       strong {
         color: #1685ff;
-
         font-size: 36px;
-
         line-height: 1;
       }
 
       span {
         margin-top: 7px;
-
         color: #50647a;
-
         font-size: 7px;
         font-weight: 700;
-
         letter-spacing: 2px;
       }
     }
@@ -152,78 +115,54 @@
 
   &__section-title {
     display: flex;
-
     align-items: flex-start;
-
     gap: 20px;
-
     margin-bottom: 35px;
 
     > span {
       margin-top: 5px;
-
       color: #1685ff;
-
       font-size: 9px;
       font-weight: 800;
     }
 
     p {
       margin-bottom: 5px;
-
       color: #52667b;
-
       font-size: 8px;
       font-weight: 700;
-
       letter-spacing: 3px;
     }
 
     h2 {
       font-size: 31px;
-
       letter-spacing: -1px;
     }
   }
 
   &__featured-grid {
     display: flex;
-
     flex-direction: column;
-
     gap: 28px;
   }
 
   &__grid {
     display: grid;
-
-    grid-template-columns: repeat(
-      3,
-      minmax(0, 1fr)
-    );
-
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
 
   &__state,
   &__empty {
     min-height: 320px;
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-
     padding: 50px;
-
     text-align: center;
-
     border: 1px solid #132b44;
-
     border-radius: 18px;
-
     background: #050d18;
 
     h2 {
@@ -232,11 +171,8 @@
 
     p {
       max-width: 500px;
-
       margin-top: 13px;
-
       color: #718398;
-
       line-height: 1.7;
     }
   }
@@ -244,12 +180,9 @@
   &__empty {
     > span {
       margin-bottom: 15px;
-
       color: #1685ff;
-
       font-size: 8px;
       font-weight: 700;
-
       letter-spacing: 4px;
     }
   }
@@ -257,33 +190,21 @@
   &__loader {
     width: 32px;
     height: 32px;
-
     border: 2px solid #17314d;
     border-top-color: #1685ff;
-
     border-radius: 50%;
-
     animation: projects-spin 0.8s linear infinite;
   }
 }
 
 .featured-project {
   display: grid;
-
-  grid-template-columns:
-    minmax(360px, 0.95fr)
-    minmax(0, 1fr);
-
+  grid-template-columns: minmax(360px, 0.95fr) minmax(0, 1fr);
   min-height: 400px;
-
   overflow: hidden;
-
   border: 1px solid #15314c;
-
   border-radius: 20px;
-
   background: #050d18;
-
   transition:
     transform 0.35s ease,
     border-color 0.35s ease,
@@ -291,11 +212,8 @@
 
   &:hover {
     transform: translateY(-5px);
-
     border-color: rgba(22, 133, 255, 0.6);
-
-    box-shadow:
-      0 25px 70px rgba(0, 70, 160, 0.1);
+    box-shadow: 0 25px 70px rgba(0, 70, 160, 0.1);
 
     img {
       transform: scale(1.025);
@@ -304,21 +222,15 @@
 
   &__visual {
     position: relative;
-
     min-height: 400px;
-
     overflow: hidden;
-
     background: #06101b;
 
     img {
       width: 100%;
       height: 100%;
-
       display: block;
-
       object-fit: cover;
-
       transition: transform 0.5s ease;
     }
   }
@@ -326,177 +238,121 @@
   &__placeholder {
     width: 100%;
     height: 100%;
-
     min-height: 400px;
-
     position: relative;
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-
     padding: 40px;
-
     text-align: center;
-
     background:
       radial-gradient(
         circle,
         rgba(22, 133, 255, 0.16),
         transparent 42%
       ),
-      linear-gradient(
-        135deg,
-        #071522,
-        #030912
-      );
+      linear-gradient(135deg, #071522, #030912);
 
     > span {
       position: absolute;
-
       top: 25px;
       left: 28px;
-
       color: rgba(255, 255, 255, 0.08);
-
       font-size: 60px;
       font-weight: 800;
     }
 
     strong {
       max-width: 360px;
-
       font-size: 29px;
-
       line-height: 1.25;
     }
 
     small {
       margin-top: 25px;
-
       color: #1685ff;
-
       font-size: 7px;
       font-weight: 700;
-
       letter-spacing: 4px;
     }
   }
 
   &__number {
     position: absolute;
-
     right: 20px;
     bottom: 20px;
-
     width: 42px;
     height: 42px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     border: 1px solid #174167;
-
     border-radius: 50%;
-
     background: rgba(2, 7, 17, 0.9);
-
     color: #1685ff;
-
     font-size: 9px;
     font-weight: 800;
   }
 
   &__content {
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     padding: 45px;
   }
 
   &__top {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 15px;
-
     margin-bottom: 15px;
 
     p {
       color: #1685ff;
-
       font-size: 8px;
       font-weight: 700;
-
       letter-spacing: 3px;
-
       text-transform: uppercase;
     }
 
     span {
       padding: 6px 9px;
-
       border: 1px solid #174167;
-
       border-radius: 20px;
-
       background: rgba(22, 133, 255, 0.07);
-
       color: #8dbfff;
-
       font-size: 6px;
       font-weight: 700;
-
       letter-spacing: 1.4px;
     }
   }
 
   h2 {
     font-size: 35px;
-
     line-height: 1.2;
-
     letter-spacing: -1.3px;
   }
 
   &__description {
     margin-top: 17px;
-
     color: #74869a;
-
     font-size: 13px;
-
     line-height: 1.75;
   }
 
   &__skills {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 7px;
-
     margin-top: 22px;
 
     span {
       padding: 7px 10px;
-
       border: 1px solid #17314d;
-
       border-radius: 6px;
-
       color: #8192a5;
-
       font-size: 7px;
       font-weight: 700;
     }
@@ -504,35 +360,24 @@
 
   &__bottom {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 20px;
-
     margin-top: 30px;
-
     padding-top: 22px;
-
     border-top: 1px solid #102338;
 
     > a {
       display: inline-flex;
-
       align-items: center;
-
       gap: 8px;
-
       color: #d5e2ee;
-
       font-size: 10px;
       font-weight: 700;
-
       transition: 0.25s ease;
 
       span {
         color: #1685ff;
-
         transition: transform 0.25s ease;
       }
 
@@ -548,17 +393,13 @@
 
   &__links {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 13px;
 
     a {
       color: #62778d;
-
       font-size: 8px;
       font-weight: 700;
-
       transition: color 0.25s ease;
 
       &:hover {
@@ -570,13 +411,9 @@
 
 .project-card {
   overflow: hidden;
-
   border: 1px solid #132a42;
-
   border-radius: 17px;
-
   background: #050d18;
-
   transition:
     transform 0.3s ease,
     border-color 0.3s ease,
@@ -584,11 +421,8 @@
 
   &:hover {
     transform: translateY(-5px);
-
     border-color: rgba(22, 133, 255, 0.55);
-
-    box-shadow:
-      0 20px 50px rgba(0, 70, 160, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 70, 160, 0.08);
 
     img {
       transform: scale(1.03);
@@ -597,42 +431,29 @@
 
   &__visual {
     display: block;
-
     height: 220px;
-
     overflow: hidden;
-
     border-bottom: 1px solid #102338;
-
     background: #06101b;
 
     img {
       width: 100%;
       height: 100%;
-
       display: block;
-
       object-fit: cover;
-
       transition: transform 0.45s ease;
     }
   }
 
   &__placeholder {
     position: relative;
-
     width: 100%;
     height: 100%;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     padding: 25px;
-
     text-align: center;
-
     background:
       radial-gradient(
         circle,
@@ -643,19 +464,15 @@
 
     span {
       position: absolute;
-
       top: 16px;
       left: 18px;
-
       color: #244460;
-
       font-size: 9px;
       font-weight: 800;
     }
 
     strong {
       font-size: 20px;
-
       line-height: 1.3;
     }
   }
@@ -666,54 +483,38 @@
 
   &__category {
     margin-bottom: 10px;
-
     color: #1685ff;
-
     font-size: 7px;
     font-weight: 700;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
   }
 
   h3 {
     font-size: 21px;
-
     line-height: 1.3;
-
     letter-spacing: -0.6px;
   }
 
   > p,
   &__body > p {
     margin-top: 12px;
-
     color: #6e8094;
-
     font-size: 11px;
-
     line-height: 1.7;
   }
 
   &__skills {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 6px;
-
     margin-top: 17px;
 
     span {
       padding: 6px 8px;
-
       border: 1px solid #17314d;
-
       border-radius: 5px;
-
       color: #74879b;
-
       font-size: 7px;
       font-weight: 700;
     }
@@ -721,35 +522,24 @@
 
   &__footer {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 15px;
-
     margin-top: 23px;
-
     padding-top: 18px;
-
     border-top: 1px solid #102338;
 
     a {
       display: inline-flex;
-
       align-items: center;
-
       gap: 6px;
-
       color: #667b90;
-
       font-size: 8px;
       font-weight: 700;
-
       transition: color 0.25s ease;
 
       span {
         color: #1685ff;
-
         transition: transform 0.25s ease;
       }
 
@@ -796,9 +586,7 @@
 
     &__stats {
       position: static;
-
       justify-content: flex-start;
-
       margin-top: 35px;
 
       > div {
@@ -835,7 +623,6 @@
 
     &__bottom {
       align-items: flex-start;
-
       flex-direction: column;
     }
   }
